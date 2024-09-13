@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        /* background-color: rgb(255, 187, 0) ; */
+        background-image: linear-gradient(rgb(255, 196, 85) , rgb(100, 79, 31) );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .round{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        border: 25px solid yellow;
+        border-left: 15px;
+        border-top: 15px;
+        background-color: yellowgreen;
+        animation-name: rotate;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;  
+    }
+    @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="round"></div>
+    </div>
+</body>
+</html>
